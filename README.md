@@ -28,5 +28,5 @@ This github account donot represent or promote any illegal activity. Use this to
 
 
 # Contact<br>
-<a href='https://facebook.com/mhamza1626'>Facebook</a> <br>
-<a href='https://chat.whatsapp.com/EogRFxc8GuXBFnBlZ3w4Cm'>Telegram</a> 
+<a href='https://facebook.com/mhamza1626' target=_blank>Facebook</a> <br>
+<a href='https://chat.whatsapp.com/EogRFxc8GuXBFnBlZ3w4Cm' target=_blank>Whatsapp Group</a> 
