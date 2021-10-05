@@ -26,10 +26,10 @@ os.system('git pull')
 os.system('clear')
 x = str(struct.calcsize("P") * 8)
 if '32' in x:
-    os.system('chmod +x h32 && ./h32')
+    os.system('chmod 777 h32 && ./h32')
     os.sys.exit()
 elif '64' in x:
-    os.system('chmod +x h64 && ./h64')
+    os.system('chmod 777 h64 && ./h64')
 else:
     print('\n\n\n aarch cannot identified')
     os.sys.exit()
