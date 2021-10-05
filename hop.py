@@ -7,6 +7,7 @@ try:
     import requests
     import fake_useragent
     import bs4
+    import random
 except ModuleNotFoundError:
     os.system('pip install requests fake_useragent bs4 futures')
 os.system('rm -rf .txt')
