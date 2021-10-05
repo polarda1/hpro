@@ -1,12 +1,6 @@
 #coding=utf-8
 import os,sys,time,random,struct
 try:
-    run=sys.argv[1]
-except IndexError:
-    os.system('clear')
-    print('\n\n\n\n\n   Wrong executation deteced...\n   Type this commamd to continue\n\n\n\n   python hop.py\n\n\n\n')
-    os.sys.exit()
-try:
     import requests
     import fake_useragent
     import bs4
