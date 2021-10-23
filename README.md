@@ -19,7 +19,7 @@ git clone https://github.com/Hamzahash/hpro.git
 
 cd hpro
 
-python2 hop.py
+python hop.py
 
 
 # Note
