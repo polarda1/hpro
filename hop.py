@@ -15,4 +15,3 @@ elif '64' in x:
 else:
     print('\033[1;31m   aarch cannot identified\033[0;97m')
     os.sys.exit()
-© 2021 GitHub, 
