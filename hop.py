@@ -1,17 +1,22 @@
 #coding=utf-8
-import os,sys,random,struct
 try:
-    import requests
+    import os, sys, requests, struct, subprocess, fake_useragent, mechanize,pymysql
+    from bs4 import BeautifulSoup as parser
+    from concurrent.futures import ThreadPoolExecutor as ThreadPool
 except ImportError:
-    os.system('pip2 install requests > /dev/null')
-    os.system('python hop.py')
-print('\033[1;36m   Getting update ... \033[0;97m')
-os.system('git pull > /dev/null')
+    os.system('pip2 install bs4 futures requests fake_useragent mechanize pymysql > /dev/null')
+    os.system('python2 hop.py')
+os.system('clear')
 x = str(struct.calcsize("P") * 8)
-if '32' in x:
-    os.system('chmod 777 h32 && ./h32')
-elif '64' in x:
-    os.system('chmod 777 h64 && ./h64')
-else:
-    print('\033[1;31m   aarch cannot identified\033[0;97m')
+distro = subprocess.check_output('uname -om', shell=True)
+android_version = subprocess.check_output('getprop ro.build.version.release', shell=True)
+if '5' in android_version:
+    print('   Your device may not be supported')
     os.sys.exit()
+else:
+    if '32' in x and  'Android' in distro:
+        os.system('chmod 777 h32 && ./h32')
+    elif '64' in x and 'Android' in distro:
+        os.system('chmod 777 h64 && ./h64')
+    else:
+        print('   Unknown machine detected, contact author')
