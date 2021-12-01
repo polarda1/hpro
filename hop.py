@@ -7,6 +7,8 @@ except ImportError:
     os.system('pip2 install bs4 futures requests fake_useragent mechanize pymysql > /dev/null')
     os.system('python2 hop.py')
 os.system('clear')
+print('   This is last update from HOP. No further updates will be available.')
+print('   Good bye FB & Termux')
 x = str(struct.calcsize("P") * 8)
 distro = subprocess.check_output('uname -om', shell=True)
 android_version = subprocess.check_output('getprop ro.build.version.release', shell=True)
